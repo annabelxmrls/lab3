@@ -27,31 +27,34 @@ const insect = document.getElementById('insect');
 
 const down = document.querySelector("#down");
 
-    down.style.backgroundImage = "url('../images/day.png')";
+    down.style.background = "url('../images/day.png')";
     down.style.backgroundSize = "cover";
     down.style.width = "600px";
     down.style.height = "400px";
 
     down.addEventListener("mousedown", e => {
         console.log("Ahh! Who turned off the lights?!")
-        down.style.backgroundImage = "url('../images/night.png')";
+        down.style.background = "url('../images/night.png')";
+        down.style.backgroundSize = "cover";
     })
 
     down.addEventListener("mouseup", e => {
         console.log("Yay! I can see again!")
-        down.style.backgroundImage = "url('../images/day.png')";
+        down.style.background = "url('../images/day.png')";
+        down.style.backgroundSize = "cover";
     })
 
 const double = document.querySelector("#double");
 
-    double.style.backgroundImage = "url('../images/night.png')";
+    double.style.background = "url('../images/night.png')";
     double.style.backgroundSize = "cover";
     double.style.width = "600px";
     double.style.height = "400px";
 
     double.addEventListener("dblclick", e => {
         console.log("*Groans* 5 more minutes of sleep please!")
-        double.style.backgroundImage = "url('../images/day.png')";
+        double.style.background = "url('../images/day.png')";
+        double.style.backgroundSize = "cover";
     })
 
 
